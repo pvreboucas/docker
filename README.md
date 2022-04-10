@@ -10,44 +10,32 @@
 ## Consolidando o conhecimento ##
 
 
-
 Chegou a hora de você seguir todos os passos realizados por mim durante esta aula. Isto é:
 
-* criar e configurar um Dockerfile
-* criar uma imagem através do seu Dockerfile
-* criar um container a partir da sua imagem
-* subir a imagem no Docker Hub
+* trabalhar com o Docker Host, para criar um volume
+* salvar dados no volume criado
+* rodar um código em um container
 
 Caso já tenha feito, excelente. Se ainda não, é importante que você execute o que foi visto no vídeo para poder continuar com o próximo capítulo.
 
-No próximo capítulo, veremos mais sobre a comunicação entre os containers. Vamos continuar?
+No próximo capítulo construiremos as nossas próprias imagens com Docker. Vamos continuar?
 
 
 ## O que aprendemos? ##
 
 
 
-Aprendemos neste capítulo:
+Nessas aulas avançamos bastante e aprendemos:
 
-* A entender o papel do arquivo DockerFile para criar imagens.
-  *O Dockerfile define os comandos para executar instalações complexas e com características específicas.
-* Vimos os principais comandos como ```FROM```, ```MAINTAINER```, ```COPY```, ```WORKDIR```, ```RUN```, ```EXPOSE``` e ```ENTRYPOINT```
-* A subir uma imagem criada através de um Dockerfile para o Docker Hub e disponibilizar para os desenvolvedores
-
-Lembrando também:
-
-* as imagens são read-only sempre
-* um container é uma instância de uma imagem
-* para guardar as alterações a docker engine cria uma nova layer em cima da última layer da imagem
+* Que containers são voláteis, isso é, ao remover um, removemos os dados juntos
+* Para deixar os dados persistente devemos usar Volumes
+* Que volumes salvos não ficam no container e sim no Docker Host
+* Como criar um ambiente de execução node.js
 
 Segue também uma breve lista dos comandos utilizados:
 
-* ```docker build -f Dockerfile``` - cria uma imagem a partir de um Dockerfile.
-* ```docker build -f CAMINHO_DOCKERFILE/Dockerfile -t NOME_USUARIO/NOME_IMAGEM``` - constrói e nomeia uma imagem não-oficial informando o caminho para o Dockerfile.
-* ```docker login``` - inicia o processo de login no Docker Hub.
-* ```docker push NOME_USUARIO/NOME_IMAGEM``` - envia a imagem criada para o Docker Hub.
-* ```docker pull NOME_USUARIO/NOME_IMAGEM``` - baixa a imagem desejada do Docker Hub.
-
+* ```docker run -v "[CAMINHO_VOLUME_LOCAL:]CAMINHO_VOLUME_CONTAINER" NOME_DA_IMAGEM``` - cria um volume no respectivo caminho do container, caso seja especificado um caminho local monta o volume local no volume do container.
+* ```docker inspect ID_CONTAINER``` - retorna diversas informações sobre o container.
 
 
 [Próxima Aula](https://github.com/pvreboucas/docker/tree/aula-4)
