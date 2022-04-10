@@ -1,9 +1,8 @@
 *[<< AULA ANTERIOR](https://github.com/pvreboucas/docker/edit/aula-3/aulas/1-salvando-dados-com-volumes.md)*
 
 
-```
 Nessa aula vamos usar um exemplo escrito Node.js. O código desse projeto pode ser baixado [aqui](https://s3.amazonaws.com/caelum-online-public/646-docker/03/projetos/volume-exemplo.zip). 
-```
+
 
 Já vimos que o que escrevemos no volume (pasta /var/www do container) aparece na pasta configurada da nossa máquina local, que no vídeo anterior foi o Desktop. Mas podemos pensar o contrário, ou seja, tudo o que escrevemos no Desktop será acessível na pasta /var/www do container.
 
@@ -84,4 +83,4 @@ alura@alura-estudio-03:~/Desktop/volume-exemplo$ docker run -p 8080:3000 -v "$(p
 
 Assim, vimos como rodar um código local, que está na nossa máquina, dentro de um container, utilizando a tecnologia dos volumes, linkando a nossa pasta local com uma pasta do container, criando assim um ambiente de desenvolvimento todo baseado em containers.
 
-*[PRÓXIMA AULA >>]()*
+*[PRÓXIMA AULA >>](https://github.com/pvreboucas/docker/blob/aula-4/aulas/1-criando-um-dockerfile.md)*
