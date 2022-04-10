@@ -46,4 +46,4 @@ Então, esse foi um exemplo para praticar a comunicação entre containers, semp
 
 
 
-*[PRÓXIMA AULA >>]()*
+*[PRÓXIMA AULA >>](https://github.com/pvreboucas/docker/blob/aula-6/aulas/1-entendendo-docker-compose.md)*
