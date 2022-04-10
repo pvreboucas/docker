@@ -387,4 +387,4 @@ networks:
 
 Assim, encerramos a configuração do docker-compose.yml. Vamos ver como subir a aplicação a partir desse arquivo no próximo vídeo.
 
-*[PRÓXIMA AULA >>]()*
+*[PRÓXIMA AULA >>](https://github.com/pvreboucas/docker/blob/aula-6/aulas/4-subindo-o-servico.md)*
